@@ -46,4 +46,7 @@ function createHeart(event) {
   likeMe.appendChild(heart);
 
   times.innerHTML = ++timesClicked;
+
+  // Remove heart from DOM
+  setTimeout(() => heart.remove(), 1000);
 }
