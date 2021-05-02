@@ -2,6 +2,7 @@ const likeMe = document.querySelector('.likeMe');
 const times = document.querySelector('#times');
 
 let clickTime = 0;
+let timesClicked = 0;
 
 likeMe.addEventListener('click', (e) => {
   // Initial Click
@@ -43,4 +44,6 @@ function createHeart(event) {
   heart.style.left = `${xInside}px`;
 
   likeMe.appendChild(heart);
+
+  times.innerHTML = ++timesClicked;
 }
