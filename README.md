@@ -7,7 +7,7 @@
 
 ## Deployment
 
-- Checkout deployment at <https://gagandeep39.github.io/css-like-button/>
+- Checkout deployment at <https://gagandeep39.github.io/css-like-button>
 
 ## Description
 
