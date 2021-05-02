@@ -1,18 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Muve to center vertcally */
-  height: 100vh;
-  justify-content: center;
+
   /* Preents scrollbar from showing by default */
   overflow: hidden;
+
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+small {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.likeMe {
+  height: 440px;
+  width: 300px;
+  background: url('https://source.unsplash.com/random') no-repeat center
+    center/cover;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  max-width: 100%;
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.likeMe .fa-heart {
+  position: absolute;
+  animation: grow 0.6 linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
 }
